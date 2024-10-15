@@ -1,0 +1,327 @@
+@font-face {
+  font-family: Ali;
+  src: url(../font/Teko-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ali;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* transform: translateX(50%); */
+  >.dark{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    color: rgba(255, 255, 0, 0.705);
+    cursor: pointer;
+    font-size: 50px;
+    opacity: 1;
+    *{
+      position: absolute;
+    }
+    >i{
+      &:nth-of-type(2){
+        color: white;
+        opacity: 0;
+      }
+    }
+  }
+  figure{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    >img{
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      &:nth-of-type(2){
+        z-index: -1;
+      }
+    }
+  }
+  h1 {
+    text-align: center;
+    width: 70%;
+    text-transform: capitalize;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    color: white;
+    /* margin-top: 40px; */
+  }
+
+  >.one {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+    
+    position: absolute;
+    top: 100px;
+    >input {
+      width: 50%;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 0 10px;
+      background-color: rgba(224, 210, 210, 0.445);
+      color: rgb(24, 21, 21);
+      text-align: center;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    button {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgba(211, 205, 205, 0.438);
+      color: rgb(19, 17, 17);
+      cursor: pointer;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    >ul {
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      /* margin-top: 50px; */
+      border-radius: 40px;
+      background-color: rgba(3, 3, 3, 0.774);
+      color: rgb(230, 223, 223);
+      
+
+      >li {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        padding: 10px;
+        /* margin: 10px; */
+        align-items: center;
+        padding-left: 50px;
+        >input {
+          background-color: rgba(214, 204, 204, 0.719);
+          width: 300px;
+          height: 50px;
+          border: none;
+          padding: 20px;
+          position: absolute;
+          border-radius: 20px;
+          /* display: none; */
+          transition: 1s;
+          opacity: 0;
+          padding-left: 50px;
+          color: rgb(29, 27, 27);
+          font-size: 15px;
+                }
+
+        >h2 {
+          width: 80%;
+          color: rgb(240, 234, 234);
+          font-size:20px;
+          text-transform: uppercase;
+          padding-right: 100px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        i {
+          font-size: 20px;
+          cursor: pointer;
+          transition: 1s;
+          display: flex;
+          justify-content: end;
+          margin-left: 5px;
+          border-radius: 50%;
+          padding: 10px;
+          background-color: rgba(128, 128, 128, 0.295);
+
+
+          &:nth-of-type(1) {
+            color: red;
+            font-size: 35px;
+            background-color: rgba(245, 222, 179, 0.63);
+          }
+
+          &:hover {
+            &:nth-of-type(2) {
+              background-color: red;
+            }
+
+            &:nth-of-type(3) {
+              background-color: blue;
+            }
+            &:nth-of-type(4) {
+              background-color: yellow;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .alert{
+    width: 80%;
+    height: 80px;
+    background-color: rgba(255, 0, 0, 0.753);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    opacity: 0;
+    >h2{
+      width: 100%;
+    }
+    >button{
+      text-transform: uppercase;
+      font-size: 25px;
+      padding: 0px 20px;
+      color: white;
+      background-color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.checkout {
+  color: blue;
+}
+
+.active {
+  opacity: 0;
+}
+
+.hide {
+  display: flex;
+}
+
+.inp {
+  /* display: flex !important;  */
+  opacity: 1 !important;
+}
+
+.tran{
+  transition: 1s;
+
+}
+.in{
+  opacity: 1 !important;
+}
+.out{
+  opacity: 0 !important;
+}
+.z{
+  z-index: 1 !important;
+}
+.txt-black{
+  color: rgba(0, 0, 0, 0.747) !important;
+}
+.bg-black{
+    background-color: rgba(252, 252, 252, 0.308) !important;
+  *{
+            color: rgb(15, 15, 15) !important;
+            
+
+  }
+  
+  
+  } 
+
+  
+/* ---------------profile----------------- */
+.box {
+width: 200px;
+height: 200px;
+position: fixed;
+right: 20px;
+bottom: 20px;
+z-index: 100;
+
+/* border: 1px solid red; */
+>div {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &:first-of-type {
+        background-color: rgb(0, 0, 0);
+        border-radius: 27% 73% 19% 81% / 75% 26% 74% 25%  ;
+        animation: anime2 infinite alternate 2s;
+
+    }
+
+    &:last-of-type {
+        background-image: url(../img/profit.jpg);
+        background-position: 0px -70px;
+        background-size: cover;
+        border-radius: 34% 66% 36% 64% / 59% 38% 62% 41%  ;
+        animation: anime1 infinite alternate 2s;
+    }
+}
+&:hover{
+    >a{
+        left: -50px;
+    }
+}
+>a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    left: 100px;
+    transition: .4s;
+ &:nth-of-type(1){
+  top: 30px;
+  /* left: -10px; */
+  transition: 1s;
+ }
+    &:nth-of-type(2){
+      top: 70px;
+      transition: 1.5s;
+    }
+    &:nth-of-type(3){
+      top: 110px;
+      transition: 2s;
+    }
+}
+}
+
+@keyframes anime1 {
+to {
+    border-radius: 52% 48% 27% 73% / 43% 20% 80% 57%;
+}
+}
+
+@keyframes anime2 {
+to {
+    border-radius: 69% 31% 85% 15% / 16% 61% 39% 84%;
+}
+}
+/* ---------------------------------------------------- */
+
